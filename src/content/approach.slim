@@ -1,0 +1,20 @@
+doctype html
+html lang="en"
+  head
+    include src/content/partials/shared/_head.slim
+
+  body#homeSection
+    include src/content/partials/shared/_header.slim
+
+    main#content role="main"
+      .bg-white
+        include src/content/partials/approach/_vp.slim
+      .bg-black
+        include src/content/partials/approach/_list.slim
+
+    .bg-white
+      include src/content/partials/shared/_footer.slim
+
+    include src/content/partials/shared/_js_dependencies.slim
+    include src/content/partials/shared/_js_init.slim
+
