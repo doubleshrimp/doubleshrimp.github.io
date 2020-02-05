@@ -58,7 +58,7 @@ gulp.task('slim', function() {
 
 gulp.task('assets', gulp.parallel(['slim', 'sass', 'js', 'vendors', 'images', 'favicons']));
 
-gulp.task('server', function (done) {
+gulp.task('serve', function (done) {
   browserSync.init({
     server: {
       baseDir: dst.path,
@@ -74,15 +74,17 @@ gulp.task('server', function (done) {
   done();
 });
 
-gulp.task('deploy', function() {
+
+gulp.task('compile', gulp.series(['clean', 'assets']));
+
+gulp.task('deploy', gulp.series(['compile', function() {
   return gulp
     .src(dst.path + '**/*')
     .pipe(ghPages({
       'branch': 'master',
       'force':  true,
     }));
-});
+  }])
+);
 
-gulp.task('compile', gulp.series(['clean', 'assets']));
-
-gulp.task('default', gulp.series(['compile', 'server']));
+gulp.task('default', gulp.series(['compile', 'serve']));
