@@ -83,4 +83,6 @@ gulp.task('deploy', function() {
     }));
 });
 
-gulp.task('default', gulp.series(['clean', 'assets', 'server']));
+gulp.task('compile', gulp.series(['clean', 'assets']));
+
+gulp.task('default', gulp.series(['compile', 'server']));
