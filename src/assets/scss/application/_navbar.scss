@@ -1,0 +1,31 @@
+.u-header__section {
+  box-shadow: none;
+}
+
+@include media-breakpoint-up(sm) {
+  // Right Alignment
+  .u-header__navbar-body,
+  .u-header__navbar-nav {
+    margin-left: auto;
+  }
+}
+
+// Small to Medium Devices
+@include media-breakpoint-between(sm, md) {
+  .navbar-expand-sm {
+    .u-header__navbar-brand {
+      padding-top: 0;
+    }
+  }
+}
+
+li.nav-item {
+  font-size: 0.9rem;
+}
+
+@include media-breakpoint-up(xs) {
+  li.nav-item {
+    //width: 100%;
+    //text-align: right;
+  }
+}

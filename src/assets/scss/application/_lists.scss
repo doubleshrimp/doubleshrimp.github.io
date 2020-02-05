@@ -1,0 +1,38 @@
+ul {
+  padding-inline-start: 0;
+  list-style:           none;
+}
+
+ol {
+  counter-reset: list-counter;
+  list-style: none;
+  padding-inline-start: 0;
+
+  li {
+    counter-increment: list-counter;
+    position: relative;
+    margin-left: 5rem;
+
+    &::before {
+      position:     absolute;
+      --size:       5rem;
+      left:         calc(-1 * var(--size));
+      margin-right: 0.5rem;
+      font-weight:  bold;
+      font-size:    3rem;
+      line-height:  1;
+      content:      "0" counter(list-counter);
+    }
+  }
+}
+
+#manifesto ol li {
+  margin: 0;
+}
+
+#manifesto ol li::before {
+  position: static;
+  left: 0;
+  margin: 0;
+  @extend .lead;
+}
