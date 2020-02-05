@@ -1,8 +1,8 @@
 {
-  "name": "doubleshrimp-website",
+  "name": "doubleshrimp.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "gulp.js",
+  "main": "gulpfile.js",
   "dependencies": {
     "ansi-gray": "^0.1.1",
     "ansi-regex": "^2.1.1",
@@ -65,25 +65,21 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "browsersync": "0.0.1-security",
-    "coffee-script": "^1.12.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathan-appere/doubleshrimp-website.git"
+    "url": "git+https://github.com/doubleshrimp/doubleshrimp.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nathan-appere/doubleshrimp-website/issues"
+    "url": "https://github.com/doubleshrimp/doubleshrimp.github.io/issues"
   },
-  "homepage": "https://github.com/nathan-appere/doubleshrimp-website#readme"
+  "homepage": "https://github.com/doubleshrimp/doubleshrimp.github.io#readme"
 }
