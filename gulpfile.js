@@ -78,7 +78,7 @@ gulp.task('deploy', function() {
   return gulp
     .src(dst.path + '**/*')
     .pipe(ghPages({
-      'branch': 'gh-pages',
+      'branch': 'master',
       'force':  true,
     }));
 });
