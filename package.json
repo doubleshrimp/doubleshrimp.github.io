@@ -44,7 +44,7 @@
     "lodash.restparam": "^3.6.1",
     "lodash.template": "^3.6.2",
     "lodash.templatesettings": "^3.1.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "multipipe": "^0.1.2",
     "object-assign": "^3.0.0",
     "parse-node-version": "^1.0.1",
